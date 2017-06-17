@@ -458,8 +458,7 @@ $string = str_replace("{servername}", $player->getServer()->getName(), $string);
 $string = str_replace("{codename}", $player->getServer()->getCodename(), $string);
 $string = str_replace("{mcpeversion}", $player->getServer()->getVersion(), $string);
 $string = str_replace("{api}", $player->getServer()->getApiVersion(), $string)
-$string = str_replace("{motd}", $player->getServer()->getMotd(), $string);
-        if($message === null)
+     if($message === null)
             $message = "";
 
         if($player->hasPermission("pchat.coloredMessages"))
