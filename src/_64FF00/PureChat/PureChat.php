@@ -450,7 +450,15 @@ class PureChat extends PluginBase
     {
         // TODO
         $string = str_replace("{display_name}", $player->getDisplayName(), $string);
-
+$string = str_replace("{ip}", $player->getAddress(), $string);
+$string = str_replace("{port}", $player->getPort(), $string);
+$string = str_replace("{gamemode}", $player->getGamemode(), $string);
+$string = str_replace("{version}", $player->getServer()->getPocketMineVersion(), $string);
+$string = str_replace("{servername}", $player->getServer()->getName(), $string);
+$string = str_replace("{codename}", $player->getServer()->getCodename(), $string);
+$string = str_replace("{mcpeversion}", $player->getServer()->getVersion(), $string);
+$string = str_replace("{api}", $player->getServer()->getApiVersion(), $string)
+$string = str_replace("{motd}", $player->getServer()->getMotd(), $string);
         if($message === null)
             $message = "";
 
