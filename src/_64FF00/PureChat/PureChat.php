@@ -80,6 +80,10 @@ class PureChat extends PluginBase
     {
         switch(strtolower($cmd->getName()))
         {
+             case "listformat":
+                $sender->sendMessage(TextFormat::GREEN . self::MAIN_PREFIX . " Showing All Formatting Information!");
+                $sender->sendMessage(TextFormat::GREEN . "Player Name as: §l§5{display_name}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "");
             case "setformat":
 
                 if(count($args) < 3)
