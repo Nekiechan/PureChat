@@ -8,7 +8,8 @@ website: https://github.com/PurePlugins/PureChat
 depend: [PurePerms]
 softdepend: [FactionsPro, XeviousPE-Factions]
 commands:
-  listformat: "Lists all formmating varables! WIP"
+  listformat: 
+      description: "Lists all formmating varables! WIP"
       permission: pchat.command.listformat
   setformat:
       description: "Allows you to set default chat format of a PurePerms group"
