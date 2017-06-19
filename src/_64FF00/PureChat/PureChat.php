@@ -456,7 +456,21 @@ class PureChat extends PluginBase
         $string = str_replace("{display_name}", $player->getDisplayName(), $string);
 $string = str_replace("{ip}", $player->getAddress(), $string);
 $string = str_replace("{port}", $player->getPort(), $string);
-$string = str_replace("{gamemode}", $player->getGamemode(), $string);
+if($player->getGamemode()==0){
+//Gamemode S
+$gamemode = "Survival";
+}else if($player->getGamemode()==1){
+//Gamemode C
+$gamemode = "Creative";
+}else if($player->getGamemode()==2){
+//Gamemode A
+$gamemode = "Adventure";
+}else if($player->getGamemode()==3){
+//Gamemode SP
+$gamemode = "Spectator";
+}
+$string = str_replace("{gamemode}",$gamemode, $string);
+
 $string = str_replace("{version}", $player->getServer()->getPocketMineVersion(), $string);
 $string = str_replace("{servername}", $player->getServer()->getName(), $string);
 $string = str_replace("{codename}", $player->getServer()->getCodename(), $string);
