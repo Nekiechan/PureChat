@@ -82,8 +82,22 @@ class PureChat extends PluginBase
         {
              case "listformat":
                 $sender->sendMessage(TextFormat::GREEN . self::MAIN_PREFIX . " Showing All Formatting Information!");
-                $sender->sendMessage(TextFormat::GREEN . "Player Name as: §l§5{display_name}§r" . TextFormat::GREEN . "!");
-                $sender->sendMessage(TextFormat::GREEN . "");
+                $sender->sendMessage(TextFormat::GREEN . "Player Name as: §l§4{display_name}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "Chat Message as: §l§4{msg}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "Prefix as: §l§4{prefix}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "Suffix as: §l§4{suffix}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "World name as: §l§4{world}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "Faction Name as: §l§4{fac_name}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "Faction Rank as: §l§4{fac_rank}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "Player Gamemode as: §l§4{gamemode}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "Player Ip as: §l§4{ip}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "Player Port as: §l§4{port}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "Server Plugin api as: §l§4{api}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "Server Minecraft Version as: §l§4{mcpeversion}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "Server PocketMine Version as: §l§4{version}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "Server Codename as: §l§4{codename}§r" . TextFormat::GREEN . "!");
+                $sender->sendMessage(TextFormat::GREEN . "Server Version Name as: §l§4{servername}§r" . TextFormat::GREEN . "!");
+                return true;
             case "setformat":
 
                 if(count($args) < 3)
